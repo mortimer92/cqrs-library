@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mortimer</groupId>
-    <artifactId>command</artifactId>
+    <artifactId>query</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>command</name>
+    <name>query</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
@@ -49,6 +49,7 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -56,6 +57,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
